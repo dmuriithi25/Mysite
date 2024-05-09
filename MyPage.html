@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Dan's Webpage</title>
+    <title>Dan Muriithi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h1>Welcome To Dan's Webpage</h1>
-    <p> My name's Dan Muriithi. Welcome, to my portofolio. You'll see practical stuff for the things I'm learning about HTML, CSS and programming in general on this page.</p>
-    <h2> Why Coding?</h2>
-    <p> I want to learn new skills that will future proof my career, work on personal projects to build incredible web pages and upskill to become a freelance or fullstack developer.</p>
-    <h3> My Interests</h3>
-    <p> Travelling, sports, gym, design, reading, eating. </p>
-    <p> Please contact me on myemail.@gmail.com</p>
+
+  <div class="container">
+   <header> 
+    <h1>Dan Muriithi</h1>
+    <div class="grid-footer">
+      <a href="https://github.com/dmuriithi25" target="_blank"><img class="grid-git" src="GitHub-logo.png" alt="Github Logo"></a>
+      <a href="mailto:dkmuriithi25@gmail.com" target="_blank"><img class="grid-gmail" src="Gmail_Logo_512px.png" alt="Gmail Logo"></a>
+      <a href="https://www.linkedin.com/in/dkmuriithi25" target="_blank"><img class="grid-li"src="LinkedIn-Logopng.png" alt="Linkedin Logo"></a>
+    </div>
+  
+   </header>
+
+    <nav>
+     <ul>
+      <li><a class="nav-list" href="#about">About</a></li>
+      <li><a class="nav-list" href="#careersummary">Career Summary</a></li>
+      <li><a class="nav-list" href="#projects">Projects</a></li>
+      <li><a class="nav-list" href="#top"> Top </a></li>
+      <!-- <li><a class="nav-list" href="#" target="_blank"> Contact</a></li> -->
+     </ul>
+    </nav>
+
+ 
+   <main class="main-container">
+
+    <div class="grid-content"> 
+      <h2>{ .hey there &#128075 }</h2>
+      <p class="home-p">And welcome to my page. I'm glad you're here. This page is dedicated to showcasing my new found skills as an aspiring web developer. I'll take you through on my journey to being a fully fledged front end developer. Until then, feel free to take a look around &#9996</p>
+    </div>
+   
+   <div class="grid-image">
+    <img class="dan-img" src="DanM img.png" alt="Dan Muriithi">
+   </div>
+
+   <div class="divider">Divider</div>
+   <div class="about"> about.</div>
+   <p class="content" id="about"><span class="contitles">Who is Dan?</span><br><br><br>Dan is an aspirational <span>Front-End developer</span> with 5 years experience in the IT industry, prodominatly in <span>procurement of IT hardware and software</span>. His aspiration in becoming a dev have grown from a love of tech, art and a keen interest in web design. <br><br> Dan enjoys <span>taking on new challenges</span>, gaining new experiences and continually <span>learning new skills</span>. You'll usually find him either in the gym, in a music venue, working on the next business idea or exploring new cities. <br><br> </p>
+   <div class="divider"> Image here</div>
+   <p class="content" id="careersummary">
+    <span class="contitles">Education</span><br>
+    Software Development Bootcamp<br><i>Just IT <span>|</span> 02/2024 - 05/2024</i><br><br>BA Hons in International Business and Globalisation<br><i>De Montfort University <span>|</span> 2013 - 2016</i><br><br><span class="contitles">Work Experience</span><br>Senior IT Buyer<br><i>Mitie <span>|</span> 07/2023 - 02/2024</i><br><br> Associate AWS Partner Manager<br><i>Computacenter <span>|</span> 07/2022 - 05/2023</i><br><br>Senior Software Buyer<br><i>Computacenter <span>|</span> 02/2022 - 07/2022</i><br><br>Buyer<br><i>Computacenter <span>|</span> 11/2018 - 02/2022</i><br><br><button class="cv" onclick="window.open('Dan Muriithi - Junior Dev CV.pdf', '_blank')">Resume</button></p>
+   <div class="carsummary"> career summary.</div>
+   <div class="divider"> Image here</div> 
+   <div class="projects" id="projects"> projects.</div>
+   
+   <section class="carousel">
+    <div class="slider-wrapper">
+      <div class="slider">
+      <img id="slide-1" src="weather-app.png" alt="Weather-App">
+      <img id="slide-2" src="js calculator.png" alt="Calculator">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+      </div>
+    </div>
+  </section>
+  
+   </main>
+    
+
+   <!-- <footer class="footer-container">   
+    <h3> Download CV</h3>
+    <h4>Contact Details</h4>
+    <p>Please contact me <a href="dkmuriithi25@gmail.com" target="_blank">on email</p>
+   </footer>   -->
+
+   <!-- future proof my career, work on personal projects to build incredible web pages and upskill to become a freelance or fullstack developer. -->
+
+  </div>
+
 </body>
 </html>

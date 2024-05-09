@@ -1,12 +1,12 @@
-
 *{
     /* background-color:rgb(91, 104, 128); */
     background-color: teal;
     margin:0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:coral;
-    /* outline: 1px solid red; */
+    /* outline: 2px solid red; */
 }
 
 html{
@@ -97,13 +97,12 @@ a{
 } */
 
 a.nav-list:hover{
-    color:white;
-    text-shadow: 1px 1px 20px white;
+    color:teal;
+    transition: 0.5s;
 }
 
 header, h1, nav, ul, li, a{
     background-color: black;
-    /* color:coral */
 }
 
 /* MAIN CONTAINER */
@@ -164,23 +163,19 @@ h2{
 .dan-img{
     border-radius: 500px 500px;
     background-color:teal;
-    opacity: 0.7;
-    height: 950px;
+    height: 700px;
     box-shadow: 2px 2px 10px 2px rgb(94, 94, 94);
 }
 
 
 /* FOOTER CONTENT */
 
-.grid-footer{
+.socials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-column: span 2; */
-    /* gap: 10px; */
+    gap: 10px;
     padding: 10px;
     align-items: center;
-    /* justify-self: start; */
-    /* justify-self: center; */
     background-color: black;
 }
 /* Justify self:center shrunk the box to it's mininal size */
@@ -209,15 +204,21 @@ h2{
 }
 
 .grid-git:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+    transform:scale(1.1);
+    z-index:1;
 }
 
 .grid-gmail:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+    transform:scale(1.1);
+    z-index:1;
 }
 
 .grid-li:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+    transform:scale(1.1);
+    z-index:1;
 }
 
 
@@ -228,13 +229,69 @@ h2{
 
 .divider{
     grid-column: span 2;
-    height: 600px;
-    margin: 0px;
+    height: 5px;
+    background-color: teal;
+    margin: 0px 100px 0px 100px;
     padding: 0px;
+    border-radius: 10px;
 }
 
+.divider-1{
+    grid-column: span 2;
+    height: 500px;
+    margin: 50px 0 50px 0;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.dev-skill{
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.html-img, .css-img, .python-img, .mysql-img{
+    max-height: 200px;
+    box-shadow: 0 0 20px 2px rgb(0, 91, 91);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.lang-txt{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    /* padding: 10px; */
+    /* margin: auto; */
+    gap: 10px;
+}
+
+.lang-txt p{
+    margin-top: 25%;
+}
+
+.lang-img{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-items: center;
+    padding: 0;
+    gap: 20px;
+    margin: 10px;
+    margin-bottom: 70px;
+    opacity: 0.5;
+}
 
 .about{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 200px;
     text-align: center;
     margin: auto;
@@ -243,6 +300,7 @@ h2{
 
 .carsummary{
     font-size: 180px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-wrap: wrap;
     text-align: center;
     margin: auto;
@@ -250,38 +308,44 @@ h2{
 }
 
 .projects{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 200px;
     text-align: center;
     margin: auto;
     background-color: black;
 }
 
-.content{
-    max-width: 600px;
-    min-height: 700px;
-    /* background-color: black; */
-}
+
 
 .carousel{
     padding: 32px;
-    max-width: 600px;
+    min-width: 550px;
     height: 700px;
     padding: 20px;
     font-size: 26px;
     text-align: center;
     margin: auto;
+    /* background-color: black; */
     color: black;
     align-content: center;
     border-radius: 10px 10px;
-    box-shadow: 1px 1px 15px silver;
+    box-shadow: 0px 0px 20px 2px;
+    transition: 0.5s;
+}
 
+.carousel:hover{
+    transform: scale(1.1);
+    z-index:1;
+    box-shadow: 0px 0px 20px 2px rgb(0, 91, 91);
 }
 
 .slider-wrapper{
     position: relative;
-    max-width: 550px;
+    max-width: 500px;
     margin: 0 auto;
+    /* background-color: black; */
 }
+
 
 .slider{
     display: flex;
@@ -290,44 +354,35 @@ h2{
     scroll-snap-type: x mandatory; /*makes the scroll bar snap to the next image when scrolling*/
     scroll-behavior: smooth;
     border-radius: 10px;
+    /* background-color: black; */
+    /* border: 1px solid silver; */
 }
 
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit:contain;
+    /* background-color: black; */
 }
-
-/* .slider-nav{
-    display: flex;
-    column-gap: 16px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-} */
-
-/* .slider-nav a{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-} */
-
 
 .content{
     /* display: flex; */
     padding: 20px;
     font-size: 26px;
+    max-width: 600px;
+    min-height: 700px;
     text-align: center;
     margin: auto;
     color: black;
     align-content: center;
     border-radius: 10px 10px;
-    box-shadow: 1px 1px 15px silver;
+    transition: 0.5s;
+}
+
+.content:hover{
+    transform:scale(1.1);
+    z-index:1;
+    box-shadow: 0px 0px 20px 2px rgb(0, 78, 78);
 }
 
 .cv{
@@ -340,7 +395,14 @@ h2{
     color: black;
     font-weight: bold;
     background-color: coral;
+    transition: 0.5s;
     /* border: 1px solid silver; */
+}
+
+.cv:hover{
+    opacity: 0.8;
+    transform:scale(1.1);
+    z-index:1;
 }
 
 i{
@@ -351,6 +413,19 @@ i{
     font-weight: bold;
     font-size: 39px;
     color: coral;
+}
+
+.footer{
+    margin: 50px 0 0px 50px;
+    padding: 0;
+    font-size: 20px;
+    font-style: italic;
+    background-color: black;
+    height: 100px;
+}
+
+.footer strong{
+    background-color: black;
 }
 
 
